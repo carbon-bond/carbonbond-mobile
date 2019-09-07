@@ -1,5 +1,5 @@
 {
-  "name": "carbonbond_mobile",
+  "name": "carbonbond",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,12 +7,14 @@
     "test": "jest",
     "lint": "eslint . --ext .ts --ext .js --ext .tsx",
     "check-ts": "tsc",
-    "adb-device": "adb devices",
-    "run-android": "react-native run-android"
+    "run-android": "react-native run-android",
+    "device": "adb devices",
+    "reverse": "adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
     "react": "16.8.6",
-    "react-native": "0.60.5"
+    "react-native": "0.60.5",
+    "react-navigation": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

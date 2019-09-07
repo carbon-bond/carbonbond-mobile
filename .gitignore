@@ -30,6 +30,12 @@ build/
 local.properties
 *.iml
 
+# Generated Files
+bin/
+gen/
+out/
+.project
+
 # Visual Studio Code
 #
 .vscode/

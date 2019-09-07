@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'carbonbond_mobile' do
-  # Pods for carbonbond_mobile
+target 'carbonbond' do
+  # Pods for carbonbond
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -27,7 +27,7 @@ target 'carbonbond_mobile' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'carbonbond_mobileTests' do
+  target 'carbonbondTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -35,10 +35,10 @@ target 'carbonbond_mobile' do
   use_native_modules!
 end
 
-target 'carbonbond_mobile-tvOS' do
-  # Pods for carbonbond_mobile-tvOS
+target 'carbonbond-tvOS' do
+  # Pods for carbonbond-tvOS
 
-  target 'carbonbond_mobile-tvOSTests' do
+  target 'carbonbond-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

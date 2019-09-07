@@ -14,11 +14,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React Native!"
 
-@interface carbonbond_mobileTests : XCTestCase
+@interface carbonbondTests : XCTestCase
 
 @end
 
-@implementation carbonbond_mobileTests
+@implementation carbonbondTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

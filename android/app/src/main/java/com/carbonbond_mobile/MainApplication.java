@@ -1,4 +1,4 @@
-package com.carbonbond_mobile;
+package com.carbonbond;
 
 import android.app.Application;
 import android.util.Log;
