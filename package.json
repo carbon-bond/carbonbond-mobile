@@ -6,15 +6,21 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .ts --ext .js --ext .tsx",
-    "check-ts": "tsc",
+    "check-ts": "tsc --skipLibCheck",
     "run-android": "react-native run-android",
     "device": "adb devices",
-    "reverse": "adb reverse tcp:8081 tcp:8081"
+    "reverse": "adb reverse tcp:8081 tcp:8081",
+    "logcat": "adb logcat *:E"
   },
   "dependencies": {
     "react": "16.8.6",
     "react-native": "0.60.5",
-    "react-navigation": "^4.0.0"
+    "react-native-gesture-handler": "^1.4.1",
+    "react-native-reanimated": "^1.2.0",
+    "react-native-screens": "^2.0.0-alpha.1",
+    "react-navigation": "^4.0.0",
+    "react-navigation-stack": "^1.5.3",
+    "react-navigation-tabs": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
